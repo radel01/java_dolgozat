@@ -26,8 +26,14 @@ public class Tábla {
 
     }
 
-    public void Elhelyez(){
-
+    public void Elhelyez(int N){
+        int index=0;
+        while (index<=N){
+            int rnd1= (int) (Math.random()*8);
+            int rnd2= (int) (Math.random()*8);
+            T[rnd1][rnd2]='K';
+            index++;
+        }
     }
 
     public void FájlbaÍr(){
