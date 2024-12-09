@@ -18,12 +18,26 @@ public class Tábla {
 
     }
 
-    public void ÜresOszlopokSzáma(){
-
+    public int ÜresOszlopokSzáma(){
+        int ossz=0;
+        for( int j = 0; j < T[0].length; j++ )
+        {
+            if(ÜresOszlop(j)){
+                ossz++;
+            }
+        }
+        return ossz;
     }
 
-    public void ÜresSorokSzáma(){
-
+    public int ÜresSorokSzáma(){
+        int ossz=0;
+        for( int j = 0; j < T.length; j++ )
+        {
+            if(ÜresSor(j)){
+                ossz++;
+            }
+        }
+        return ossz;
     }
 
     public void Elhelyez(int N){
