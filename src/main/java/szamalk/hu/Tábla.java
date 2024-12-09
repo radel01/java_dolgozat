@@ -51,12 +51,26 @@ public class Tábla {
         }
     }
 
-    public void ÜresOszlop(){
-
+    public boolean ÜresOszlop(int oszlop){
+        boolean uresE=true;
+        for( int j = 0; j < T.length; j++ )
+        {
+            if(T[j][oszlop]=='K'){
+                uresE=false;
+            }
+        }
+        return uresE;
     }
 
-    public void ÜresSor(){
-
+    public boolean ÜresSor(int sor){
+        boolean uresE=true;
+        for( int j = 0; j < T[sor].length; j++ )
+        {
+            if(T[sor][j]=='K'){
+                uresE=false;
+            }
+        }
+        return uresE;
     }
 
 }
