@@ -1,5 +1,7 @@
 package szamalk.hu;
 
+import szamalk.hu.JatekProgram.LogikaiJatek;
+
 public class Main {
     public static void main(String[] args) {
         Tábla Tábla=new Tábla('#');
@@ -12,5 +14,17 @@ public class Main {
         System.out.println("9. feladat: Üres oszlopok és sorok száma:");
         System.out.println("Oszlopok: "+ Tábla.ÜresOszlopokSzáma());
         System.out.println("Sorok: "+ Tábla.ÜresSorokSzáma());
+
+        LogikaiJatek j1=new LogikaiJatek();
+        j1.kezd();
+        j1.ment();
+        j1.vege();
+        System.out.println(j1.toString());
+
+        LogikaiJatek j2=new LogikaiJatek(10);
+        j2.kezd();
+        j2.ment();
+        j2.vege();
+        System.out.println(j2.toString());
     }
 }
