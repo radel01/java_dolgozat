@@ -51,7 +51,11 @@ public class Tábla {
     }
 
     public void FájlbaÍr(){
-
+        for (int i = 0; i < 64; i++) {
+            Tábla Tábla=new Tábla('*');
+            Tábla.Elhelyez(i+1);
+            Tábla.Megjelenít();
+        }
     }
 
     public void Megjelenít(){
